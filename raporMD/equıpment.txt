@@ -1,0 +1,28 @@
+	- 12V 12mm 100 rpm redüktörlü mikro DC motor
+	  189.60 TRY
+
+	- 122mm GT2 kapalı kayış
+	  45.00 TRY
+
+	- 5 adet 6000zz 10x26x8mm Çok Amaçlı Rulman
+	  174.89
+
+	- 3D Baskı dişli takımı, mil, tabla ve 		  enkoder yuvası
+	  - TRY
+
+	- 600 ppr döner enkoder
+	  604.55 TRY
+
+	- L298N Voltaj Regulatörlü Çift Motor Sürücü 	  Kartı
+	  73.41 TRY
+
+	- Jumper kabloları		
+	  39.36 TRY
+
+	- arduino nano
+	  158.90 TRY
+
+	- WX14-12L25 10k R Telli Metal Potansiyometre
+	  107.53 TRY
+
+

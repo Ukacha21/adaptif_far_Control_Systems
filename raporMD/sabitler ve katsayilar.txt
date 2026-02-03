@@ -1,0 +1,47 @@
+V(t) = Giriş Voltajı, L298 Sürücü Çıkış Voltajı
+R = Armatür Direnci
+L = Armature Endüktansı(N20 gibi küçük motorlarda ihmal edilir)
+
+Kb = Ters (EMF) Kuvvet Sabiti
+Kt = Motorun Tork Sabiti
+
+
+%% 1. SİSTEM PARAMETRELERİ (Tahmini/Ölçülen Değerler)
+R  = 10;       % Direnç (Ohm)
+Kt = 0.012;    % Tork Sabiti (Nm/A)
+Kb = 0.012;    % Zıt EMF Sabiti (V.s/rad)
+N  = 100;      % Dişli Oranı (100:1)
+K  = 15; %bizde rulman var       % Kaplin Yay Sertliği (Nm/rad)
+JL = 0.003;  %bizde taret değil Jshaft  % Taret + Alyan Atalet Momenti (kg.m^2)
+Dshaft = 0.001; % simdilik, placeholder
+
+%==========================
+
+As you can see the system above, the adaptive far system, shaft is supposed to rotate based on the output from the trimpod.
+
+links, motor-shaft-sun gear-2planetary gears
+
+the shaft is fixed wth two 6000zz10x26x8 bearing on both sides, the beginning and the end.
+the sun gear is palced in a bearing as well, but the J moment of inertia has been calculated as sum of Jshaft and Jsun_gear.
+the 2 planet gears, are also fixed on a bearing.
+
+all bearing are the same on the system.
+
+our motor is 3mm N20 DC motor (motor comes with integrated reducer)
+we have an rotary encoder, 600 ppr, its not included in the electromechanical system model, we just use it to read the values on Arduino and matlab.
+
+so heres the operation principle:
+we rotate the trimpot to a certain position, the trimpots maximum position is 270 degrees, a 10K industrial trimpot
+then the motor get the voltage from the trimpot, the system calculates how many degrees the trimpot has rotated and the motor starts rotating. the motor keeps rotating until we get to the angle of rotation, using the rotary encoded. while the motor rotates, and the angle read from the encoder starts to get close to the target angle, we start decreasing the motor speed accordingly. until it reaches the target angle and then we stop completely until the trimpot is rotated to the another target angle.
+the trimpot is limiter between -270 + 270 degrees(if im not wrong, it could be 0-270).
+
+and then in the Arduino plotter we plot the carachteristic of the transfer function accordingly.
+
+the transfer function and the electromechanincal model is given in the second picture. the first picture illustrates how it looks in real life.
+
+i need:
+1-the appropritave J,D, K values for every component on the system
+2-readjusted transfer function, only if the transfer function we got is wrong and needs readjusting
+3-arduino code(to work the system, and plot the transfer function)
+4-matlab function to plot the transfer function graph
+
