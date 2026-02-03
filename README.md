@@ -27,8 +27,8 @@ Araç farlarının virajlarda direksiyonun dönüşüne bağlı olarak açılı 
 
 Araç sürüş esnasında, viraja gelince direksiyonun dönüş yönü ve hızını takip ederek kordine bir sekilde farların da dönmesini amaçlayan bir proje fikridir. Böylece istikamet yönünü görebilmek için aracın bütününün dönmesine ihtiyaç kalmadan farların dinamik hareketleri sayesinde kolaylaştırılmış olur.
 
-![](images/Picture1.png)
-![](images/Picture2.png)
+![](raporMD/images/Picture1.png)
+![](raporMD/images/Picture2.png)
 
 ## **3. Proje İLE İlgili Bilgiler**
 
@@ -36,13 +36,13 @@ Araç sürüş esnasında, viraja gelince direksiyonun dönüş yönü ve hızı
 ### 3.1. Kullanılan Malzeme ve Ekipman
 Bu projede kullandığımız malzemeleri aşağıdaki gibi ifade edilmiştir:
 
-![](images/maliyet.png)
+![](raporMD/images/maliyet.png)
 
 ### 3.2. Projenin Mekanik Bileşenleri
 
 
-![](images/Picture3.png)
-![](images/Picture4.png)
+![](raporMD/images/Picture3.png)
+![](raporMD/images/Picture4.png)
 
 Ortadaki milin ucunda bulunan orta dişlisi bizim güneş dişli oluyor, onun yanındakileri sağdaki ve soldaki olmak üzere ikiye ayrılan dişliler planet dişliler oluyor.
 
@@ -55,7 +55,7 @@ Milin ortasına da bir adet GT2 kasnak yerleştirilecektir. Amaç, dönüş taki
 
 Bu aşamada, elektronik komponentlerin bağlntı şekilleri ve birbiriyle ilişkisini gösterir `Harness Wiring Diagram’ı` ile gösterilmiştir.
 
-![](images/Picture5.png)
+![](raporMD/images/Picture5.png)
 
 
 ### 3.4. Projenin Yazılım Mimarisi
@@ -63,28 +63,28 @@ Bu aşamada, elektronik komponentlerin bağlntı şekilleri ve birbiriyle ilişk
 Projemizin yazılım kısmını `Arduino IDE`’de C ve C++ programlama dilleriyle gerçekleştirdik.
 Programın temel algoritmasını temsil etmek üzere, akıs şeması aşağıdaki gibidir:
 
-![](images/Picture6.png)
+![](raporMD/images/Picture6.png)
 
 ### 3.5. Sistem Modelleri
     Elektromekanik Model:
 
-![](images/Picture7.png)
+![](raporMD/images/Picture7.png)
 
 ## Transfer Fonskiyonu G(s)
 
-![](images/Picture8.png)
+![](raporMD/images/Picture8.png)
 
 ## Simulink Diagram
 
-![](images/Picture9.png)
+![](raporMD/images/Picture9.png)
 
 ## Simulink TF Çıkış Eğrisi
 
-![](images/Picture10.png)
+![](raporMD/images/Picture10.png)
 
 ## Matlab TF Plot Eğrisi
 
-![](images/Picture11.png)
+![](raporMD/images/Picture11.png)
 
 
 ## 4. PROJE Sonuçları
